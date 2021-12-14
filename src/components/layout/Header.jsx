@@ -1,7 +1,9 @@
 import logo from '../../assets/meet.png'
+import { useUsers } from '../../context/UserContext'
 import './Header.css'
 
-const Header = ({ user }) => {
+const Header = () => {
+  const { user } = useUsers()
   const { name, color } = user
   return (
     <header>
