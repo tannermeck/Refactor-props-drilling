@@ -22,6 +22,5 @@ it('Should show a user profile', async () => {
 
   const profileName = await screen.findByText(/vonta/i)
   expect(profileName).toBeInTheDocument()
-
   expect(container).toMatchSnapshot()
 })
